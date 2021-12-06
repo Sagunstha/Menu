@@ -1,20 +1,21 @@
-import React from "react";
-import menu from "./menu";
-import MenuItems from "./data";
+import React, { useState } from "react";
+import Menu from "./Menu";
+import menu from "./data";
 
-function App () {
+
+const App = () => {
+  const [menuItems, setMenuItems] = useState(menu);
+  const newItems = (( ) => 
+    setMenuItems(newItems));
   return (
-    <div>
-      <div className={menu}>
-    <menu />
-    <div className={MenuItems}>
-     <MenuItems/>
-     </div>
-    </div>
-    </div>
-  
+    <main>
+      <section>
+        <div className="title">
+        </div>
+        <Menu items={menuItems} />
+      </section>
+    </main>
   );
-
 };
 
 export default App;

@@ -1,5 +1,5 @@
 
-const MenuItems = [
+const menu = [
     {
         title: 'Boiled Crayfish',
         price: 5.5,
@@ -13,7 +13,7 @@ const MenuItems = [
         desc: `Consectetur adipisicing addEventListener. Soluta imedit,saepe`
     },
     {
-        title: 'King Pizza',
+        title: 'King Burger',
         price: 5.5,
         img: './images/6.jpg',
         desc: `Consectetur adipisicing addEventListener. Soluta imedit,saepe`
@@ -21,7 +21,7 @@ const MenuItems = [
     {
         title: 'Pizza Margerita',
         price: 5.5,
-        img: './images/3.jpg',
+        img: './images/4.jpg',
         desc: `Consectetur adipisicing addEventListener. Soluta imedit,saepe`
     },
     {
@@ -38,5 +38,5 @@ const MenuItems = [
     },
 
 ]
-export default MenuItems;
-  
+export default menu;
+

@@ -1,18 +1,25 @@
-import React from 'react'
-import MenuItems from './data'
+import React from "react";
 
-function menu() {
-    return (
-        <div className="menu">
-            <h1>Menu Item</h1>
-            <div className='Menu-Item'>
-              {MenuItems.map((menulist,key) =>{
-                  return<div>{menulist.title}</div>
-              })}
-              <data />
+const Menu = ({ items }) => {
+  return (
+    <div className="section-center">
+      {items.map((item) => {
+        const {title, img, desc, price } = item;
+        return (
+          <article  className="menu-item">
+            <img src={img} alt={title} className="photo" />
+            <div className="item-info">
+              <header>
+                <h2>{title}</h2>
+                <h4 className="price">${price}</h4>
+              </header>
+              <p className="item-text">{desc}</p>
             </div>
-        </div>
-    )
-}
+          </article>
+        );
+      })}
+    </div>
+  );
+};
 
-export default menu
+export default Menu;
